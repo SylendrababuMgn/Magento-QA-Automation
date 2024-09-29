@@ -5,7 +5,8 @@
     <classes>
       <class name="com.magnto.LoginTestCase">
         <methods>
-          <include name="setup"/>
+          <include name="startApp"/>
+          <include name="closeApp"/>
           <include name="TC01login"/>
         </methods>
       </class> <!-- com.magnto.LoginTestCase -->

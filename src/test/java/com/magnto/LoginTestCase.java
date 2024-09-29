@@ -8,18 +8,18 @@ import org.testng.annotations.Test;
 
 import com.magento.pages.LoginPage;
 
-public class LoginTestCase extends SeleniumBase {
+public class LoginTestCase extends Base {
 	SeleniumBase base = new SeleniumBase();
-	RemoteWebDriver driver = null;
-	@BeforeTest
-	public void setup() {
-		driver = base.setUp("https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2xvZ291dFN1Y2Nlc3Mv/");
-	}
-	
-	@AfterTest
-	public void quit() {
-		base.quit();
-	}
+//	RemoteWebDriver driver = null;
+//	@BeforeTest
+//	public void setup() {
+//		driver = base.setUp("https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2xvZ291dFN1Y2Nlc3Mv/");
+//	}
+//	
+//	@AfterTest
+//	public void quit() {
+//		base.quit();
+//	}
 	@Test
 	public void TC01login() {
 		
