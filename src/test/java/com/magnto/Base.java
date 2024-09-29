@@ -8,10 +8,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 
-import utils.ReadExcel;
+import com.util.ReadExcel;
+
 
 public class Base {
-	String URL = "dev62773.service-now.com/";
+	String URL = "https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2xvZ291dFN1Y2Nlc3Mv/";
 
 	protected RemoteWebDriver driver = null;
 	public String fileName = "";
