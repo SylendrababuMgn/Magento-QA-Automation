@@ -6,8 +6,8 @@
       <class name="com.magnto.LoginTestCase">
         <methods>
           <include name="startApp"/>
+          <include name="TC02_Invalid_login" invocation-numbers="0 1"/>
           <include name="closeApp"/>
-          <include name="TC01login"/>
         </methods>
       </class> <!-- com.magnto.LoginTestCase -->
     </classes>

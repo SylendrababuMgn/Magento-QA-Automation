@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,18 +21,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleniumBase implements SeleniumAPI{
 	long timeOuts = 10; //30
-	int maxWaitTime =30;
+	int maxWaitTime =60;
 
-	protected RemoteWebDriver driver = null;
-	WebDriverWait wait = null;  
-
-	public RemoteWebDriver setUp(String url) {
+//	private ThreadLocal<WebDriver> driver = null;
+	public WebDriver driver = null;
+	public WebDriverWait wait = null;  
+	
+	public WebDriver setUp(String url) {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeOuts));
 		driver.get(url);
-//		wait = new WebDriverWait(driver,  Duration.ofSeconds(maxWaitTime));
+		wait = new WebDriverWait(driver,  Duration.ofSeconds(maxWaitTime));
 		return driver;
+		
 	}
 
 	public void setUp(Browser browserName, String url) {
@@ -71,6 +74,7 @@ public class SeleniumBase implements SeleniumAPI{
 			case name:
 				return driver.findElement(By.name(value));
 			case xpath:
+				System.out.println(driver);
 				return driver.findElement(By.xpath(value));
 			case link:
 				return driver.findElement(By.linkText(value));
@@ -116,11 +120,11 @@ public class SeleniumBase implements SeleniumAPI{
 	}
 
 	public void click(WebElement ele) {
-//		WebElement element = wait
-//				.withMessage("Element is not clickable")
-//				.until(ExpectedConditions
-//						.elementToBeClickable(ele));
-		ele.click();
+		WebElement element = wait
+				.withMessage("Element is not clickable")
+				.until(ExpectedConditions
+						.elementToBeClickable(ele));
+		element.click();
 	}
 
 	public void type(WebElement ele, String testData) {
@@ -135,7 +139,7 @@ public class SeleniumBase implements SeleniumAPI{
 		}
 	}
 
-	private WebElement isElementVisible(WebElement ele) {
+	public WebElement isElementVisible(WebElement ele) {
 		WebElement element = wait.
 				withMessage("Element is not visible")
 				.until(
@@ -167,6 +171,8 @@ public class SeleniumBase implements SeleniumAPI{
 		return ele.isDisplayed();
 	}
 
-
+	public String getText(WebElement ele) {
+		return ele.getText();
+	}
 
 }

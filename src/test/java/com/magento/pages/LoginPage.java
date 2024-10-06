@@ -2,16 +2,23 @@ package com.magento.pages;
 
 import org.magento.seleniumBase.Locators;
 import org.magento.seleniumBase.SeleniumBase;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage extends SeleniumBase {
 	
 
-	public LoginPage(RemoteWebDriver driver) {
-		this.driver = driver;
+	public LoginPage(WebDriver driver, WebDriverWait wait) {
+	  	this.driver = driver;
+	  	this.wait = wait;
 	}
-	
-	public boolean pageTitle() {
+//	
+//	public LoginPage(RemoteWebDriver driver) {
+//		super(driver);
+//	}
+
+	public boolean getpageTitle() {
 		return isDisplayed(element(Locators.xpath,"//span[text()='Customer Login']"));
 	}
 	
@@ -45,5 +52,13 @@ public class LoginPage extends SeleniumBase {
 		
 	}
 	
+	public boolean getErrorMessgae() {
+		return isDisplayed(element(Locators.xpath, "//div[@role='alert']"));
+	}
 	
+	public void login(String email, String password) {
+		enterEmail(email);
+		enterPasword(password);
+		clickSignIn();
+	}
 }
