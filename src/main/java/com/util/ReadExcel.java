@@ -10,17 +10,17 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadExcel {
 	
-	public static String[][] getExcelData(String fileName) {
+	public static String[][] getExcelData(String fileName, String sheetName) {
 		
 //		String fileLocation = "./test-data/Login-data.xlsx";
 		XSSFWorkbook wbook = null;
 		try {
-			wbook = new XSSFWorkbook("./data/"+fileName+".xlsx");
+			wbook = new XSSFWorkbook(fileName+".xlsx");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		XSSFSheet sheet = wbook.getSheetAt(0);
+		XSSFSheet sheet = wbook.getSheet(sheetName);
 		int lastRowNum = sheet.getLastRowNum();
 		int physicalNumberOfRows = sheet.getPhysicalNumberOfRows();
 		System.out.println("Inclusive of header: "+physicalNumberOfRows);

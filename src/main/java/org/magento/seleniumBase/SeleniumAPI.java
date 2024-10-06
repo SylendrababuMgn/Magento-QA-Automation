@@ -1,22 +1,23 @@
 package org.magento.seleniumBase;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public interface SeleniumAPI {
 	/**
 	 * This method will launch the chrome browser with the given URL
-	 * @author LetCode - koushik Chatterjee
+	 * @author LetCode - Sylu
 	 * @param url
 	 * @return 
 	 * @exception NullPointerException, InvalidArgumentException
 	 */
 
-	RemoteWebDriver setUp(String url);
+	WebDriver setUp(String url);
 
 	/**
 	 * This method will launch the given browser with the given URL
-	 * @author LetCode - koushik Chatterjee
+	 * @author LetCode - Sylu
 	 * @param url
 	 * @param browserName
 	 */
@@ -25,21 +26,21 @@ public interface SeleniumAPI {
 
 	/**
 	 *	This function is used to close the active browser
-	 * 	@author LetCode - koushik Chatterjee
+	 * 	@author LetCode - Sylu
 	 *
 	 */
 	void close();
 
 	/**
 	 *	This function is used to quit the driver instance
-	 * 	@author LetCode - koushik Chatterjee
+	 * 	@author LetCode - Sylu
 	 *
 	 */
 	void quit();
 
 	/**
 	 * This method is used to find any webelement with in the page
-	 * @author LetCode - koushik Chatterjee
+	 * @author LetCode - Sylu
 	 * @param type - element type eg - id, name or linkText
 	 * @param value - element value
 	 * @return WebElement
@@ -49,7 +50,7 @@ public interface SeleniumAPI {
 
 	/**
 	 * This function is used to switch to specific tab
-	 * @author LetCode - koushik Chatterjee
+	 * @author LetCode - Sylu
 	 * @param i
 	 */
 	
@@ -57,7 +58,7 @@ public interface SeleniumAPI {
 
 	/**
 	 * This function is used to select the dropdown with the given value
-	 * @author LetCode - koushik Chatterjee
+	 * @author LetCode - Sylu
 	 * @param ele
 	 * @param value
 	 */
@@ -67,7 +68,7 @@ public interface SeleniumAPI {
 
 	/**
 	 * This function is used to select the dropdown with the given text
-	 * @author LetCode - koushik Chatterjee
+	 * @author LetCode - Sylu
 	 * @param ele
 	 * @param text
 	 */
@@ -76,7 +77,7 @@ public interface SeleniumAPI {
 
 	/**
 	 * This function is used to select the dropdown with the given index
-	 * @author LetCode - koushik Chatterjee
+	 * @author LetCode - Sylu
 	 * @param ele
 	 * @param position
 	 */
