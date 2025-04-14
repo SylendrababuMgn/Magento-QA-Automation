@@ -19,3 +19,42 @@ This project is a **Magento QA Automation Framework** designed for automating te
 ---
 
 ## 📁 Project Structure
+Magento-QA-Automation/
+│
+├── src/ # Source code (test scripts and framework logic)
+│ └── test/
+│ ├── java/
+│ │ ├── pages/ # Page classes (Page Object Model)
+│ │ ├── tests/ # Test classes (TestNG based)
+│ │ └── utils/ # Utility classes (Excel reader, loggers, etc.)
+│ └── resources/ # Test resources (test data, properties files)
+│
+├── test-output/ # TestNG output directory
+├── logs/ # Log files from test executions
+├── .settings/ # Eclipse IDE configurations
+├── .classpath # Eclipse classpath config
+├── .project # Eclipse project config
+├── testng.xml # TestNG suite for full regression or specific runs
+├── testngClass.xml # TestNG suite by class
+├── testngParallel.xml # TestNG suite for parallel execution
+├── pom.xml # Maven configuration and dependencies
+├── .gitignore # Git ignored files
+└── README.md # Project documentation (you're reading it!)
+
+---
+
+## ⚙️ Technologies Used
+
+| Tool               | Purpose                              |
+|--------------------|--------------------------------------|
+| Java               | Programming language                 |
+| Selenium WebDriver | Browser automation                   |
+| TestNG             | Test framework and execution control |
+| Maven              | Build and dependency management      |
+| Apache POI         | Reading data from Excel              |
+| Log4j              | Logging support                      |
+| ExtentReports      | Rich HTML test reporting             |
+
+---
+
+
