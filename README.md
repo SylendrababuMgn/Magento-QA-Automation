@@ -56,3 +56,17 @@ This project is a **Magento QA Automation Framework** designed for automating te
 ---
 
 
+## 📌 Key Features
+
+- ✅ Page Object Model (POM) design pattern
+- ✅ Modular and scalable framework
+- ✅ Data-driven testing using Excel
+- ✅ Parallel test execution using TestNG
+- ✅ Log4j integration for logging test steps
+- ✅ ExtentReports for visual reporting
+- ✅ Easy test suite management via TestNG XML files
+
+---
+
+
+
