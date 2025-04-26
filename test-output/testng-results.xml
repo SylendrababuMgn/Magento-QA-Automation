@@ -1,51 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-07T00:16:09 IST" name="Default suite" finished-at="2024-10-07T00:16:55 IST" duration-ms="45640">
+  <suite started-at="2025-04-26T18:39:37 IST" name="Suite" finished-at="2025-04-26T18:41:03 IST" duration-ms="86262">
     <groups>
     </groups>
-    <test started-at="2024-10-07T00:16:09 IST" name="Default test" finished-at="2024-10-07T00:16:55 IST" duration-ms="45640">
-      <class name="com.magnto.LoginTestCase">
-        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.LoginTestCase@78fbff54]" started-at="2024-10-07T00:16:12 IST" name="startApp" finished-at="2024-10-07T00:16:26 IST" duration-ms="14373" status="PASS">
+    <test started-at="2025-04-26T18:39:37 IST" name="Test" finished-at="2025-04-26T18:41:03 IST" duration-ms="86262">
+      <class name="com.magnto.SignUpTestCase">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.SignUpTestCase@19835e64]" started-at="2025-04-26T18:39:37 IST" name="startApp" finished-at="2025-04-26T18:39:44 IST" duration-ms="6788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method signature="TC02_Invalid_login([Ljava.lang.String;)[pri:0, instance:com.magnto.LoginTestCase@78fbff54]" started-at="2024-10-07T00:16:26 IST" name="TC02_Invalid_login" data-provider="data" finished-at="2024-10-07T00:16:37 IST" duration-ms="10603" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@2e766822]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="TC01_valid_login()[pri:0, instance:com.magnto.SignUpTestCase@19835e64]" started-at="2025-04-26T18:39:44 IST" name="TC01_valid_login" finished-at="2025-04-26T18:39:47 IST" duration-ms="3015" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC02_Invalid_login -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.LoginTestCase@78fbff54]" started-at="2024-10-07T00:16:37 IST" name="closeApp" finished-at="2024-10-07T00:16:38 IST" duration-ms="908" status="PASS">
+        </test-method> <!-- TC01_valid_login -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.SignUpTestCase@19835e64]" started-at="2025-04-26T18:39:47 IST" name="closeApp" finished-at="2025-04-26T18:39:47 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.LoginTestCase@78fbff54]" started-at="2024-10-07T00:16:38 IST" name="startApp" finished-at="2024-10-07T00:16:49 IST" duration-ms="11170" status="PASS">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.SignUpTestCase@19835e64]" started-at="2025-04-26T18:39:47 IST" name="startApp" finished-at="2025-04-26T18:39:50 IST" duration-ms="3048" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method signature="TC02_Invalid_login([Ljava.lang.String;)[pri:0, instance:com.magnto.LoginTestCase@78fbff54]" started-at="2024-10-07T00:16:49 IST" name="TC02_Invalid_login" data-provider="data" finished-at="2024-10-07T00:16:55 IST" duration-ms="5910" status="PASS">
+        <test-method signature="TC02_valid_login()[pri:0, instance:com.magnto.SignUpTestCase@19835e64]" started-at="2025-04-26T18:39:50 IST" name="TC02_valid_login" finished-at="2025-04-26T18:39:53 IST" duration-ms="3081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_valid_login -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.SignUpTestCase@19835e64]" started-at="2025-04-26T18:39:53 IST" name="closeApp" finished-at="2025-04-26T18:39:53 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.magnto.SignUpTestCase -->
+      <class name="com.magnto.LoginTestCase">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:39:37 IST" name="startApp" finished-at="2025-04-26T18:39:44 IST" duration-ms="6447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="TC01_valid_login(java.lang.String,java.lang.String)[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:39:44 IST" name="TC01_valid_login" data-provider="data" finished-at="2025-04-26T18:40:07 IST" duration-ms="23155" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@3003e580]]>
+                <![CDATA[msb6246@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Babu@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Element not found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Element not found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: driver.version: unknown
+at org.magento.seleniumBase.SeleniumBase.element(SeleniumBase.java:90)
+at com.magnto.LoginTestCase.TC01_valid_login(LoginTestCase.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_valid_login -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:07 IST" name="closeApp" finished-at="2025-04-26T18:40:07 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:07 IST" name="startApp" finished-at="2025-04-26T18:40:10 IST" duration-ms="3242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="TC02_Invalid_login([Ljava.lang.String;)[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:10 IST" name="TC02_Invalid_login" data-provider="data" finished-at="2025-04-26T18:40:15 IST" duration-ms="4310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@cd1d761]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_Invalid_login -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.LoginTestCase@78fbff54]" started-at="2024-10-07T00:16:55 IST" name="closeApp" finished-at="2024-10-07T00:16:55 IST" duration-ms="304" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:15 IST" name="closeApp" finished-at="2025-04-26T18:40:15 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:15 IST" name="startApp" finished-at="2025-04-26T18:40:19 IST" duration-ms="4681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="TC02_Invalid_login([Ljava.lang.String;)[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:19 IST" name="TC02_Invalid_login" data-provider="data" finished-at="2025-04-26T18:40:24 IST" duration-ms="4237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@68be8808]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_Invalid_login -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:24 IST" name="closeApp" finished-at="2025-04-26T18:40:24 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:24 IST" name="startApp" finished-at="2025-04-26T18:40:27 IST" duration-ms="3149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="TC03_valid_signUp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:27 IST" name="TC03_valid_signUp" finished-at="2025-04-26T18:40:30 IST" duration-ms="3246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_valid_signUp -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:30 IST" name="closeApp" finished-at="2025-04-26T18:40:30 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:30 IST" name="startApp" finished-at="2025-04-26T18:40:34 IST" duration-ms="3649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="TC04_Invalid_signUp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:34 IST" name="TC04_Invalid_signUp" finished-at="2025-04-26T18:40:35 IST" duration-ms="1343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_Invalid_signUp -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:35 IST" name="closeApp" finished-at="2025-04-26T18:40:36 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:36 IST" name="startApp" finished-at="2025-04-26T18:40:39 IST" duration-ms="3183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="TC05_PlaceOrderFromHomePage()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:39 IST" name="TC05_PlaceOrderFromHomePage" finished-at="2025-04-26T18:40:54 IST" duration-ms="14910" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Element not found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Element not found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: driver.version: unknown
+at org.magento.seleniumBase.SeleniumBase.element(SeleniumBase.java:90)
+at com.magento.pages.HomePage.clickProceedToCheckOut(HomePage.java:109)
+at com.magnto.LoginTestCase.TC05_PlaceOrderFromHomePage(LoginTestCase.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_PlaceOrderFromHomePage -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:54 IST" name="closeApp" finished-at="2025-04-26T18:40:54 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:54 IST" name="startApp" finished-at="2025-04-26T18:40:58 IST" duration-ms="4156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="TC06_SearchProduct()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:40:58 IST" name="TC06_SearchProduct" finished-at="2025-04-26T18:41:03 IST" duration-ms="4770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_SearchProduct -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.magnto.LoginTestCase@1b84f475]" started-at="2025-04-26T18:41:03 IST" name="closeApp" finished-at="2025-04-26T18:41:03 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- com.magnto.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
