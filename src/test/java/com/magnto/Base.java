@@ -33,7 +33,7 @@ public class Base extends SeleniumBase {
 		return excelData;
 	}
 	
-	public LoginPage p;
+	public LoginPage page;
 	public SignUpPage signUp;
 	public HomePage home;
 	public ProductPage product;
@@ -42,7 +42,7 @@ public class Base extends SeleniumBase {
 		
 		driver = setUp(URL);
 		driver.manage().deleteAllCookies();
-		p = new LoginPage(driver, wait);
+		page = new LoginPage(driver, wait);
 		signUp = new SignUpPage(driver, wait);
 		home = new HomePage(driver, wait);
 		product = new ProductPage(driver, wait);

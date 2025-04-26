@@ -318,3 +318,14 @@ java.lang.AssertionError: expected [The account sign-in was incorrect or your ac
 2024-10-07 00:18:26 INFO  LogUtil:23 - Assertion Passed: Validating error message for invalid login
 2024-10-07 00:18:45 INFO  LogUtil:23 - Asserting - Validating error message for invalid login || Expected: true || Actual: true
 2024-10-07 00:18:45 INFO  LogUtil:23 - Assertion Passed: Validating error message for invalid login
+2025-04-26 18:39:44 INFO  LoginTestCase:20 - Started Executing TC01_valid_login... 
+2025-04-26 18:39:44 INFO  LogUtil:23 - Asserting - Validating page Title is present or not || Expected: true || Actual: true
+2025-04-26 18:39:44 INFO  LogUtil:23 - Assertion Passed: Validating page Title is present or not
+2025-04-26 18:39:44 INFO  LogUtil:23 - Asserting - Validateing email label is present or not || Expected: true || Actual: true
+2025-04-26 18:39:44 INFO  LogUtil:23 - Assertion Passed: Validateing email label is present or not
+2025-04-26 18:39:44 INFO  LogUtil:23 - Asserting - Validating password label is present or not || Expected: true || Actual: true
+2025-04-26 18:39:44 INFO  LogUtil:23 - Assertion Passed: Validating password label is present or not
+2025-04-26 18:40:15 INFO  LogUtil:23 - Asserting - Validating error message for invalid login || Expected: true || Actual: true
+2025-04-26 18:40:15 INFO  LogUtil:23 - Assertion Passed: Validating error message for invalid login
+2025-04-26 18:40:24 INFO  LogUtil:23 - Asserting - Validating error message for invalid login || Expected: true || Actual: true
+2025-04-26 18:40:24 INFO  LogUtil:23 - Assertion Passed: Validating error message for invalid login

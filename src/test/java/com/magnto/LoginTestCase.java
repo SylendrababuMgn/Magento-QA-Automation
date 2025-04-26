@@ -18,19 +18,19 @@ public class LoginTestCase extends Base {
 	public void TC01_valid_login(String email, String password) {
 		
 		log.info("Started Executing TC01_valid_login... ");
-		CustomAssert.assertTrue(p.getpageTitle(), "Validating page Title is present or not");
-		CustomAssert.assertTrue(p.getEmailLabel(), "Validateing email label is present or not");
-		CustomAssert.assertTrue(p.getPasswordLabel(), "Validating password label is present or not");
-		p.enterEmail(email);
-		p.enterPasword(password);
-		p.clickSignIn();
+		CustomAssert.assertTrue(page.getpageTitle(), "Validating page Title is present or not");
+		CustomAssert.assertTrue(page.getEmailLabel(), "Validateing email label is present or not");
+		CustomAssert.assertTrue(page.getPasswordLabel(), "Validating password label is present or not");
+		page.enterEmail(email);
+		page.enterPasword(password);
+		page.clickSignIn();
 		
 		String loginSuccess;
 		try {
-			loginSuccess = p.getText(p.element(Locators.xpath, "//div[@class='box-content']")).split("\n")[1];
+			loginSuccess = page.getText(page.element(Locators.xpath, "//div[@class='box-content']")).split("\n")[1];
 		} catch (Exception e) {
 			driver.navigate().refresh();
-			loginSuccess = p.getText(p.element(Locators.xpath, "//span[@class=\"logged-in\"]"));
+			loginSuccess = page.getText(page.element(Locators.xpath, "//span[@class=\"logged-in\"]"));
 		}
 		
 		Assert.assertEquals(loginSuccess,email);
@@ -39,11 +39,11 @@ public class LoginTestCase extends Base {
 	@Test(dataProvider = "data")
 	public void TC02_Invalid_login(String[] data) throws InterruptedException {
 		System.out.println(data[0]);
-		p.enterEmail(data[0]);
-		p.enterPasword(data[1]);
-		p.clickSignIn();
+		page.enterEmail(data[0]);
+		page.enterPasword(data[1]);
+		page.clickSignIn();
 		Thread.sleep(2000);
-		CustomAssert.assertTrue(p.getErrorMessgae(), "Validating error message for invalid login");
+		CustomAssert.assertTrue(page.getErrorMessgae(), "Validating error message for invalid login");
 	}
 	
 	@Test
