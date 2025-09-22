@@ -14,10 +14,11 @@ public class LoginTestCase extends Base {
 
 	
 	private static final Logger log = LogManager.getLogger(LoginTestCase.class);
-	@Test(dataProvider = "data")
-	public void TC01_valid_login(String email, String password) {
+	@Test
+	public void TC01_valid_login() {
 		
 		log.info("Started Executing TC01_valid_login... ");
+<<<<<<< HEAD
 		CustomAssert.assertTrue(page.getpageTitle(), "Validating page Title is present or not");
 		CustomAssert.assertTrue(page.getEmailLabel(), "Validateing email label is present or not");
 		CustomAssert.assertTrue(page.getPasswordLabel(), "Validating password label is present or not");
@@ -25,25 +26,34 @@ public class LoginTestCase extends Base {
 		page.enterPasword(password);
 		page.clickSignIn();
 		log.info("Executing TC01_valid_login... ");
+=======
+		CustomAssert.assertTrue(loginPage.getpageTitle(), "Validating page Title is present or not");
+		CustomAssert.assertTrue(loginPage.getEmailLabel(), "Validateing email label is present or not");
+		CustomAssert.assertTrue(loginPage.getPasswordLabel(), "Validating password label is present or not");
+		loginPage.enterEmail("abc@gmail.com");
+		loginPage.enterPasword("1234@112");
+		loginPage.clickSignIn();
+		
+>>>>>>> 7346106c54873fbf4bcd4c5fddfe648d9307dde7
 		String loginSuccess;
 		try {
-			loginSuccess = page.getText(page.element(Locators.xpath, "//div[@class='box-content']")).split("\n")[1];
+			loginSuccess = loginPage.getText(loginPage.element(Locators.xpath, "//div[@class='box-content']")).split("\n")[1];
 		} catch (Exception e) {
 			driver.navigate().refresh();
-			loginSuccess = page.getText(page.element(Locators.xpath, "//span[@class=\"logged-in\"]"));
+			loginSuccess = loginPage.getText(loginPage.element(Locators.xpath, "//span[@class=\"logged-in\"]"));
 		}
 		
-		Assert.assertEquals(loginSuccess,email);
+		Assert.assertEquals(loginSuccess,"abc@gmail.com");
 	}
 	
 	@Test(dataProvider = "data")
 	public void TC02_Invalid_login(String[] data) throws InterruptedException {
 		System.out.println(data[0]);
-		page.enterEmail(data[0]);
-		page.enterPasword(data[1]);
-		page.clickSignIn();
+		loginPage.enterEmail(data[0]);
+		loginPage.enterPasword(data[1]);
+		loginPage.clickSignIn();
 		Thread.sleep(2000);
-		CustomAssert.assertTrue(page.getErrorMessgae(), "Validating error message for invalid login");
+		CustomAssert.assertTrue(loginPage.getErrorMessgae(), "Validating error message for invalid login");
 	}
 	
 	@Test
