@@ -24,7 +24,7 @@ public class LoginTestCase extends Base {
 		page.enterEmail(email);
 		page.enterPasword(password);
 		page.clickSignIn();
-		
+		log.info("Executing TC01_valid_login... ");
 		String loginSuccess;
 		try {
 			loginSuccess = page.getText(page.element(Locators.xpath, "//div[@class='box-content']")).split("\n")[1];
