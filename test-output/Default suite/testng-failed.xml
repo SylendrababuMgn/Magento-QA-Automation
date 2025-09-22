@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.magnto.LoginTestCase">
+      <class name="com.magnto.testAi">
         <methods>
           <include name="startApp"/>
-          <include name="TC02_Invalid_login" invocation-numbers="0 1"/>
+          <include name="TC01_valid_login"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- com.magnto.LoginTestCase -->
+      </class> <!-- com.magnto.testAi -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
