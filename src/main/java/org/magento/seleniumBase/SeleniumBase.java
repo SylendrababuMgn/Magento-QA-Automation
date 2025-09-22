@@ -57,7 +57,15 @@ public class SeleniumBase implements SeleniumAPI{
 		driver.get(url);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(maxWaitTime));
 	}
+	
+	public void implicitWait(int sec) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+	}
 
+	public void explicitWait(String Xpath) {
+		wait.until(ExpectedConditions.elementToBeClickable(By.id(Xpath)));
+	}
+	
 	public void close() {
 		driver.close();
 	}
